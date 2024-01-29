@@ -44,15 +44,17 @@ function displayGIFs(data) {
     }
 }
 
+
 // Function to copy the GIF link
 function copyGIFLink(url) {
+    const truncatedUrl = url.substring(0, 30) + '...'; // Truncate the URL to the first 30 characters
     const tempInput = document.createElement('input');
-    tempInput.value = url;
+    tempInput.value = truncatedUrl;
     document.body.appendChild(tempInput);
     tempInput.select();
     document.execCommand('copy');
     document.body.removeChild(tempInput);
-    alert('GIF link copied to clipboard!');
+    alert('Truncated GIF link copied to clipboard: ' + truncatedUrl);
 }
 
 // Function to generate the meme using Bhailang logic

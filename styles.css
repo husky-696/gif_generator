@@ -127,3 +127,8 @@ button:hover {
     color: #555;
     margin-top: 20px;
 }
+
+  .gifImage {
+    width: 300px; /* Set the desired width */
+    height: 300px; /* Set the desired height */
+  }

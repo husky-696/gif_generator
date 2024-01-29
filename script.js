@@ -1,5 +1,6 @@
 
-const apiKey = process.env.REACT_APP_GIPHY_API_KEY; // Access the GIPHY API key from the environment variable
+// Define the GIPHY API key
+const apiKey = 'cvBOw8z7gRiC7ugEIRhg9IPgaOBFy7TV';
 
 // Function to fetch GIFs from GIPHY API
 function fetchGIFs() {

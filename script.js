@@ -32,12 +32,13 @@ function displayGIFs(data) {
         gifContainer.innerHTML = '';
 
         // Display the fetched GIFs in the UI
-        data.data.forEach(gif => {
+         data.data.forEach(gif => {
             const gifImage = document.createElement('img');
             gifImage.src = gif.images.original.url;
-            gifImage.addEventListener('click', () => copyGIFLink(gif.images.original.url)); // Add click event to copy the GIF link
+            gifImage.classList.add('gifImage'); // Add the CSS class to the image
+            gifImage.addEventListener('click', () => copyGIFLink(gif.images.original.url));
             gifContainer.appendChild(gifImage);
-        });
+          });
     } else {
         console.error('Error: memeGIFs container not found');
     }

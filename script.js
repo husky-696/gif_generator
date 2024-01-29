@@ -47,14 +47,22 @@ function displayGIFs(data) {
 
 // Function to copy the GIF link
 function copyGIFLink(url) {
-    const truncatedUrl = url.substring(0, 30) + '...'; // Truncate the URL to the first 30 characters
+    const truncatedUrl = truncateURL(url, 30); // Truncate the URL for display
     const tempInput = document.createElement('input');
-    tempInput.value = truncatedUrl;
+    tempInput.value = url; // Use the original URL for functionality
     document.body.appendChild(tempInput);
     tempInput.select();
     document.execCommand('copy');
     document.body.removeChild(tempInput);
     alert('Truncated GIF link copied to clipboard: ' + truncatedUrl);
+}
+
+// Function to truncate the URL
+function truncateURL(url, maxLength) {
+    if (url.length > maxLength) {
+        return url.substring(0, maxLength) + '...'; // Truncate the URL to the specified length
+    }
+    return url; // Return the original URL if it's already shorter
 }
 
 // Function to generate the meme using Bhailang logic

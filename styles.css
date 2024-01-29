@@ -140,6 +140,10 @@ button:hover {
     font-size: 14px; /* Adjust the font size for better readability on mobile */
   }
 
+      header {
+    max-width: 90%; /* Set a narrower maximum width for the header on mobile */
+  }
+
   .logo img {
     height: 60px; /* Adjust the height of the logo for mobile */
     width: 60px; /* Adjust the width of the logo for mobile */

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #6ec6ff; /* Light blue header bar */
+    margin: 20px auto; /* Center the header horizontally */
+    padding: 1%;
+    max-width: 1200px; /* Set maximum width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 80px; /* Adjust the height as needed */
+    width: 80px; /* Adjust the width as needed */
+    border-radius: 50%; /* Circular logo */
+    padding: 10px; /* Padding for the logo */
+}
+
+link[rel="icon"] {
+    border-radius: 50%;
+  }
+
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333; /* Dark color for the app name */
+}
+
+.container {
+    padding: 20px;
+    text-align: center; /* Center the content */
+}
+
+/* ... (previous styles remain unchanged) */
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the input elements */
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    margin-right: 10px;
+}
+
+/* ... (previous styles remain unchanged) */
+
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4e3eff; /* Blue button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6b5cff; /* Darker blue on hover */
+}
+
+#memePreview, #memeGIFs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the GIFs */
+    margin-top: 20px;
+}
+
+.gif-container img {
+    margin: 5px;
+    border: 2px solid #6b5cff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gif-container img:hover {
+    transform: scale(1.1);
+}
+
+#copyButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4e3eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#copyButton:hover {
+    background-color: #6b5cff;
+}
+
+.copy-instruction {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.copyright {
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+}

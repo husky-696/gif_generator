@@ -141,7 +141,7 @@ button:hover {
   }
 
       header {
-    max-width: 90%; /* Set a narrower maximum width for the header on mobile */
+    max-width: 60%; /* Set a narrower maximum width for the header on mobile */
   }
 
   .logo img {
